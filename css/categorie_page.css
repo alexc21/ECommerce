@@ -1,0 +1,96 @@
+body {
+	background-color: #f2f2f2;
+	font-family: 'Dosis', sans-serif;
+}
+
+.container {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.container img {
+	width: 200px;
+	height: 150px;
+	border-radius: 12px;
+}
+/*.title {
+    margin-top: 6%;
+    margin-left: 10%;
+    height: 300px;
+    width: 1200px;
+    background-image: url(../pictures/cataffaire.png);
+    background-size:cover;
+background-repeat: no-repeat;
+        -moz-border-radius:20px;
+-webkit-border-radius:20px ;
+border-radius:20px ;
+    -webkit-box-shadow: 5px 5px 5px 3px #656565;
+-moz-box-shadow: 5px 5px 5px 3px #656565;
+filter:progid:DXImageTransform.Microsoft.dropshadow(OffX=5, OffY=5, Color='#656565', Positive='true');
+zoom:1;
+box-shadow: 5px 5px 5px 3px #656565;
+}*/
+
+.sstitre {
+    text-align: center;
+}
+.thumbnail {
+	border: none;
+	width: 250px;
+	height: 200px;
+	margin: auto;
+	margin-bottom: 50px;
+}
+
+
+.col-lg-2 {
+	/*background-image: url("../pictures/background.jpg");*/
+	color: white;
+	text-align: center;
+
+}
+
+.nav-gche {
+	margin-top: 29%;
+    margin-left: -15px;
+    height: 600px;
+	background-image: url("../pictures/woodtextur.jpg");
+	padding-bottom: 400px;
+        -moz-border-radius: 0 15px 15px 0;
+-webkit-border-radius:35px 0 15px 15px 0;
+border-radius:0 15px 15px 0;
+      -webkit-box-shadow: 5px 5px 5px 3px #656565;
+-moz-box-shadow: 5px 5px 5px 3px #656565;
+filter:progid:DXImageTransform.Microsoft.dropshadow(OffX=5, OffY=5, Color='#656565', Positive='true');
+zoom:1;
+box-shadow: 5px 5px 5px 3px #656565;
+}
+
+.row {
+	margin-top: 50px;
+}
+
+
+#titre {
+	padding-top: 35px;
+    padding-left: 6px;
+	font-size: 35px;
+    font-family: 'Cabin Sketch', cursive;
+    color:black;
+}
+
+
+.thumbnail img {
+    height: 200px;
+    width: 250px;
+
+}
+
+p {
+	font-size: 30px;
+}
+
+h1 {
+	font-size: 60px;
+	/*font-weight: bold;*/
+}
