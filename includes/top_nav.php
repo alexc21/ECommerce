@@ -1,7 +1,6 @@
 <?php 
-
 session_start(); 
-
+require('connexion.php');
 ?>
 
  <link rel="stylesheet" type="text/css" href="css/top_nav.css">
@@ -30,14 +29,14 @@ session_start();
         <ul class="dropdown-menu">
 <?php
                 
-                try
+               /* try
 {
   $bdd = new PDO('mysql:host=localhost;dbname=ecommerce;charset=utf8', 'root', '');
 }
 catch (Exception $e)
 {
         die('Erreur : ' . $e->getMessage());
-}
+}*/
                 
                $categorie = $bdd->query('SELECT * from categorie ');
                while($donnees = $categorie->fetch()){

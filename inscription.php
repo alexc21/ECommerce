@@ -58,14 +58,14 @@ include("includes/top_nav.php");
        		<select class="form-control input-lg" name='id_ville'>
              <?php
                 
-                try
+               /* try
 {
   $bdd = new PDO('mysql:host=localhost;dbname=ecommerce;charset=utf8', 'root', '');
 }
 catch (Exception $e)
 {
         die('Erreur : ' . $e->getMessage());
-}
+}*/
                 
                $categorie = $bdd->query('SELECT * from ville ');
                while($donnees = $categorie->fetch()){

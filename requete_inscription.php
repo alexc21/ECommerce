@@ -1,12 +1,13 @@
 <?php
-try
+require('includes/connexion.php');
+/*try
 {
 	$bdd = new PDO('mysql:host=localhost;dbname=ecommerce', 'root', '');
 }
 catch(Exception $e)
 {
         die('Erreur : '.$e->getMessage());
-}
+}*/
 
 $prenom = htmlspecialchars($_POST["prenom"]);
 $nom = htmlspecialchars($_POST["nom"]);

@@ -23,45 +23,46 @@ include("includes/top_nav.php");
 
   <h1>CATEGORIES</h1>
 
-  <div class="container">
+  <div class="container-fluid">
 
-    <div class="row">
-      
+    <div class="row-flex">
+
+
       <div class="col-lg-4 col-sm-6">
         <a href="" class="thumbnail">
-          <img src="pictures/affaire.jpg" >
+          <img src="pictures/1.png" >
         </a>
       </div>
    
   
       <div class="col-lg-4 col-sm-6">
         <a href="" class="thumbnail">
-          <img src="pictures/famille.jpg" >
+          <img src="pictures/2.png" >
         </a>
       </div>
     
     
       <div class="col-lg-4 col-sm-6">
         <a href="" class="thumbnail">
-          <img src="pictures/animaux.jpg" >
+          <img src="pictures/3.png" >
         </a>
       </div>
 
       <div class="col-lg-4 col-sm-6">
         <a href="" class="thumbnail">
-          <img src="pictures/aventure.jpg" >
+          <img src="pictures/4.png" >
         </a>
       </div>
 
       <div class="col-lg-4 col-sm-6">
         <a href="" class="thumbnail">
-          <img src="pictures/camping.jpg" >
+          <img src="pictures/5.png" >
         </a>
       </div>
 
       <div class="col-lg-4 col-sm-6">
         <a href="" class="thumbnail">
-          <img src="pictures/indispensable.jpg" >
+          <img src="pictures/6.png" >
         </a>
       </div>
   </div>

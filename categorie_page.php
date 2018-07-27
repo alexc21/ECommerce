@@ -20,7 +20,7 @@ include("includes/top_nav.php");
     <div class="col-md-12">
         
         <!-- bandeau image -->
-    <img class="img-responsive" src="pictures/cataffaire.png"style="width:100%"/>
+    <img class="img-responsive" src="pictures/affaire.png"style="width:100%"/>
         <!-- fin bandeau image-->
         
         <!-- description catégorie -->
@@ -37,6 +37,12 @@ include("includes/top_nav.php");
         <div class="col-md-2 ">
           <div class="nav-gche">
           <h3 id="titre"> CATEGORIES</h3>
+          <li>
+            <ul>Accessoires</ul>
+            <ul>Dans les transports</ul>
+            <ul>Sommeil</ul>
+            <ul>Sac et Trolleys</ul>
+          </li>
          
           </div>
         </div>
@@ -51,39 +57,60 @@ include("includes/top_nav.php");
 <!-- Articles -->
       <div class="col-lg-4 col-sm-6">
         <a href="fiche_produit.php" class="thumbnail">
-          <img src="pictures/affaire.jpg" >
+          <img src="photo-affaire/apple_pencil.jpeg" >
         </a>
       </div>
    
   
       <div class="col-lg-4 col-sm-6">
         <a href="" class="thumbnail">
-          <img src="pictures/famille.jpg" >
+          <img src="photo-affaire/bose.jpeg" >
         </a>
       </div>
     
     
       <div class="col-lg-4 col-sm-6">
         <a href="" class="thumbnail">
-          <img src="pictures/animaux.jpg" >
+          <img src="photo-affaire/chromecast.jpg" >
         </a>
       </div>
 
       <div class="col-lg-4 col-sm-6">
         <a href="" class="thumbnail">
-          <img src="pictures/aventure.jpg" >
+          <img src="photo-affaire/clipboard.jpg" >
         </a>
       </div>
 
       <div class="col-lg-4 col-sm-6">
         <a href="" class="thumbnail">
-          <img src="pictures/camping.jpg" >
+          <img src="photo-affaire/conferencier.jpg" >
         </a>
       </div>
 
       <div class="col-lg-4 col-sm-6">
         <a href="" class="thumbnail">
-          <img src="pictures/indispensable.jpg" >
+          <img src="photo-affaire/etui_carte.jpg" >
+           <h5>Nom du produit</h5>
+          <h4>Prix</h4>
+        </a>
+       
+      </div>
+
+      <div class="col-lg-4 col-sm-6">
+        <a href="" class="thumbnail">
+          <img src="photo-affaire/etui_carte.jpg" >
+        </a>
+      </div>
+
+      <div class="col-lg-4 col-sm-6">
+        <a href="" class="thumbnail">
+          <img src="photo-affaire/etui_carte.jpg" >
+        </a>
+      </div>
+
+      <div class="col-lg-4 col-sm-6">
+        <a href="" class="thumbnail">
+          <img src="photo-affaire/etui_carte.jpg" >
         </a>
       </div>
      <!-- fin Articles -->

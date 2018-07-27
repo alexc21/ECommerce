@@ -1,6 +1,7 @@
 <?php
 session_start();
-try
+require('includes/connexion.php');
+/*try
 {
 	$bdd = new PDO('mysql:host=localhost;dbname=ecommerce;charset=utf8', 'root', '');
 }
@@ -8,7 +9,7 @@ catch(Exception $e)
 {
         die('Erreur : '.$e->getMessage());
 }
-
+*/
 
 if(isset($_POST['log'])) {
      $adresse_mail = htmlspecialchars($_POST['adresse_mail']);
