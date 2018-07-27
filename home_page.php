@@ -1,5 +1,6 @@
 <?php
 include("includes/header.php");
+
 ?>
 
     <link rel="stylesheet" type="text/css" href="css/home_page.css">
@@ -27,44 +28,21 @@ include("includes/top_nav.php");
 
     <div class="row-flex">
 
+<?php
+          $categorie = $bdd->query('SELECT * from categorie ');
+               while($donnees = $categorie->fetch()){
+                   ?>
 
       <div class="col-lg-4 col-sm-6">
-        <a href="" class="thumbnail">
-          <img src="pictures/1.png" >
+        <?php echo"<a class='thumbnail' href='categorie_page.php?id_categorie=".$donnees["id_categorie"]."'>";?>
+          <img src="pictures/<?php echo $donnees['image_categorie']; ?>"/>
         </a>
       </div>
-   
+<?php 
+    } 
+                
+?>
   
-      <div class="col-lg-4 col-sm-6">
-        <a href="" class="thumbnail">
-          <img src="pictures/2.png" >
-        </a>
-      </div>
-    
-    
-      <div class="col-lg-4 col-sm-6">
-        <a href="" class="thumbnail">
-          <img src="pictures/3.png" >
-        </a>
-      </div>
-
-      <div class="col-lg-4 col-sm-6">
-        <a href="" class="thumbnail">
-          <img src="pictures/4.png" >
-        </a>
-      </div>
-
-      <div class="col-lg-4 col-sm-6">
-        <a href="" class="thumbnail">
-          <img src="pictures/5.png" >
-        </a>
-      </div>
-
-      <div class="col-lg-4 col-sm-6">
-        <a href="" class="thumbnail">
-          <img src="pictures/6.png" >
-        </a>
-      </div>
   </div>
 </div>
 
