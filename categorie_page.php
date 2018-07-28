@@ -2,6 +2,7 @@
 include("includes/header.php");
 ?>
 
+
 <link rel="stylesheet" type="text/css" href="css/categorie_page.css">
 
 
@@ -20,7 +21,16 @@ include("includes/top_nav.php");
     <div class="col-md-12">
         
         <!-- bandeau image -->
-    <img class="img-responsive" src="pictures/affaire.png"style="width:100%"/>
+
+<?php
+$getid = htmlspecialchars($_GET['id_categorie']);
+   $requser = $bdd->prepare('SELECT * FROM categorie WHERE id_categorie = ?');
+   $requser->execute(array($getid));
+   $donnees = $requser->fetch();
+
+?>
+    <img class="img-responsive" src="pictures/<?php echo $donnees['header_categorie']; ?>"/>
+
         <!-- fin bandeau image-->
         
         <!-- description catégorie -->
