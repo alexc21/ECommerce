@@ -2,7 +2,7 @@
 
 try
 {
-  $bdd = new PDO('mysql:host=localhost;dbname=ecommerce;charset=utf8', 'root', '');
+  $bdd = new PDO('mysql:host=localhost;dbname=ecommerce2;charset=utf8', 'root', 'root');
 }
 catch (Exception $e)
 {

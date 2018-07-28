@@ -65,64 +65,21 @@ $getid = htmlspecialchars($_GET['id_categorie']);
 <div class="col-md-10">
         	<div class="row">
 <!-- Articles -->
-      <div class="col-lg-4 col-sm-6">
-        <a href="fiche_produit.php" class="thumbnail">
-          <img src="photo-affaire/apple_pencil.jpeg" >
-        </a>
-      </div>
-   
-  
-      <div class="col-lg-4 col-sm-6">
-        <a href="" class="thumbnail">
-          <img src="photo-affaire/bose.jpeg" >
-        </a>
-      </div>
-    
-    
-      <div class="col-lg-4 col-sm-6">
-        <a href="" class="thumbnail">
-          <img src="photo-affaire/chromecast.jpg" >
-        </a>
-      </div>
+                <?php
+$messages = $bdd->query('SELECT * FROM article INNER JOIN categorie ON categorie.id_categorie = article.id_categorie WHERE article.id_categorie = '.$_GET['id_categorie'].' ');
+                  
+                  while($donnees = $messages->fetch()){
+                  ?>
 
       <div class="col-lg-4 col-sm-6">
-        <a href="" class="thumbnail">
-          <img src="photo-affaire/clipboard.jpg" >
+        <a href="fiche_produit.php?id_article="  class="thumbnail">
+          <img src="photos/<?php echo $donnees['photo']; ?>" >
+           <h5><?php echo $donnees['nom_article']; ?></h5>
+          <h4><?php echo $donnees['prix']; ?></h4>
         </a>
       </div>
-
-      <div class="col-lg-4 col-sm-6">
-        <a href="" class="thumbnail">
-          <img src="photo-affaire/conferencier.jpg" >
-        </a>
-      </div>
-
-      <div class="col-lg-4 col-sm-6">
-        <a href="" class="thumbnail">
-          <img src="photo-affaire/etui_carte.jpg" >
-           <h5>Nom du produit</h5>
-          <h4>Prix</h4>
-        </a>
-       
-      </div>
-
-      <div class="col-lg-4 col-sm-6">
-        <a href="" class="thumbnail">
-          <img src="photo-affaire/etui_carte.jpg" >
-        </a>
-      </div>
-
-      <div class="col-lg-4 col-sm-6">
-        <a href="" class="thumbnail">
-          <img src="photo-affaire/etui_carte.jpg" >
-        </a>
-      </div>
-
-      <div class="col-lg-4 col-sm-6">
-        <a href="" class="thumbnail">
-          <img src="photo-affaire/etui_carte.jpg" >
-        </a>
-      </div>
+<?php } ?>
+      
      <!-- fin Articles -->
                 
  </div>

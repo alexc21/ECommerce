@@ -1,15 +1,7 @@
 <?php
 session_start();
 require('includes/connexion.php');
-/*try
-{
-	$bdd = new PDO('mysql:host=localhost;dbname=ecommerce;charset=utf8', 'root', '');
-}
-catch(Exception $e)
-{
-        die('Erreur : '.$e->getMessage());
-}
-*/
+
 
 if(isset($_POST['log'])) {
      $adresse_mail = htmlspecialchars($_POST['adresse_mail']);
@@ -27,7 +19,7 @@ $query->execute([$_POST['adresse_mail']]);
        $fdpdeclasse = password_verify($_POST['mot_de_passe'], $row['mot_de_passe']);
        
            var_dump($row);
-           var_dump($fdp);
+           var_dump($fdpdeclasse);
        
 if( $fdpdeclasse == true){
     $_SESSION['id_membre'] = $row;
