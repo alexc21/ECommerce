@@ -72,10 +72,10 @@ $messages = $bdd->query('SELECT * FROM article INNER JOIN categorie ON categorie
                   ?>
 
       <div class="col-lg-4 col-sm-6">
-        <a href="fiche_produit.php?id_article="  class="thumbnail">
+        <?php echo"<a class='thumbnail' href='fiche_produit.php?id_article=".$donnees["id_article"]."'>";?> 
           <img src="photos/<?php echo $donnees['photo']; ?>" >
            <h5><?php echo $donnees['nom_article']; ?></h5>
-          <h4><?php echo $donnees['prix']; ?></h4>
+          <h4><?php echo $donnees['prix']; ?> €</h4>
         </a>
       </div>
 <?php } ?>

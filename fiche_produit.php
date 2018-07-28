@@ -32,19 +32,26 @@ include("includes/top_nav.php");
 
    
     		<div class="col-md-5">
+<?php
+$getid = htmlspecialchars($_GET['id_article']);
+$requser = $bdd->prepare('SELECT * FROM article WHERE id_article = ?');
+   $requser->execute(array($getid));
+   $donnees = $requser->fetch();
+?>
+
     			<div class="content">
     			<a href="" class="thumbnail">
-          			<img class="img-responsive" src="pictures/batterypro.jpeg" >
+          			<img class="img-responsive" src="photos/<?php echo $donnees['photo']; ?>"/>
         		</a>
         		</div>
     		</div>
 
     		<div class="col-md-5">
     			<div class="content desc">
-	              	<h2>Nom du produit</h2>
-	              	<h2>Prix</h2>
+	              	<h2><?php echo $donnees['nom_article']; ?></h2>
+	              	<h2><?php echo $donnees['prix']; ?> €</h2>
 	              	<h2>Description</h2>
-	              		<p style="font-size: 20px">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente dicta fugit fugiat hic aliquam itaque facere, soluta. Totam id dolores, sint aperiam sequi pariatur praesentium animi perspiciatis molestias iure, ducimus!</p>
+	              		<p style='font-size: 20px'><?php echo $donnees['caracteristique']; ?></p>
 	             	<button type="button" class="btn btn-primary">Ajoutez au panier</button>
             	</div>
     		</div>

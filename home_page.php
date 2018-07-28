@@ -29,7 +29,7 @@ include("includes/top_nav.php");
     <div class="row-flex">
 
 <?php
-          $categorie = $bdd->query('SELECT * from categorie ');
+          $categorie = $bdd->query('SELECT * from categorie');
                while($donnees = $categorie->fetch()){
                    ?>
 
