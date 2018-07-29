@@ -68,7 +68,7 @@ require('connexion.php');
 
 
 
-      <li><a href="intro-fr.html"><i class="fas fa-cart-arrow-down"></i> Panier</a></li>
+      <li><a href="panier.php"><i class="fas fa-cart-arrow-down"></i> Panier</a></li>
     </ul>
 
   </div>
